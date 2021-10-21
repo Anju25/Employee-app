@@ -1,0 +1,16 @@
+<h2 class="text-center" style="padding:20px;" >UPDATE EMPLOYEE</h2>
+<form (ngSubmit)="submit()">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="emp.name" name="firstname">
+    </div>
+    <div class="form-group">
+        <label>Email</label>
+        <input type="text" class="form-control" id="email" [(ngModel)]="emp.email" name="email">
+    </div>
+    <div class="form-group">
+        <label>Job-Title</label>
+        <input type="text" class="form-control" id="jobTitle" [(ngModel)]="emp.jobTitle" name="Job-Title">
+    </div>
+    <button class="btn btn-success" type="submit">Submit</button>
+</form>
